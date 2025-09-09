@@ -27,8 +27,8 @@ This project demonstrates how to use Picamera2 on a Raspberry Pi 4B to capture c
 > Raspberry Pi OS Bookworm 将摄像头捕捉应用程序从 libcamera-\* 更名为 rpicam-*。符号链接允许用户暂时使用旧名称。尽快采用新的应用程序名称。 Bookworm之前的 Raspberry Pi OS 版本仍使用 libcamera-* 名称。
 
 ## 功能测试
-`rpicam-hello` 如果能显示摄像头，说明摄像头配置正常
-`xeyes`      如果能弹窗，说明 X11 转发正常
+`rpicam-hello` 如果能显示摄像头，说明摄像头配置正常    
+`xeyes`      如果能弹窗，说明 X11 转发正常    
 
 ## 运行代码
 python3 finger.py
