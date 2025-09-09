@@ -9,4 +9,10 @@ This project demonstrates how to use Picamera2 on a Raspberry Pi 4B to acquire c
 - Python：最新版本Raspberry Pi OS自带3.11
 
 ## 环境配置
-1. `sudo apt update && sudo apt -y upgrade`更新系统软件包 
+1. `sudo apt update && sudo apt -y upgrade`更新系统软件包
+2. 
+sudo apt -y install vim virtualenv       # 安装 vim 编辑器和 virtualenv 虚拟环境工具
+sudo apt -y install python3-pip          # 安装 Python 包管理工具 pip
+sudo apt -y install libatlas-base-dev    # 安装加速数学库（OpenCV/NumPy 会用到）
+sudo apt -y install python3-opencv       # 安装 OpenCV（系统版）
+sudo apt -y install python3-picamera2    # 安装 Picamera2（摄像头接口）
