@@ -10,9 +10,14 @@ This project demonstrates how to use Picamera2 on a Raspberry Pi 4B to acquire c
 
 ## 环境配置
 1. `sudo apt update && sudo apt -y upgrade`更新系统软件包
-2. 
-sudo apt -y install vim virtualenv       # 安装 vim 编辑器和 virtualenv 虚拟环境工具
-sudo apt -y install python3-pip          # 安装 Python 包管理工具 pip
-sudo apt -y install libatlas-base-dev    # 安装加速数学库（OpenCV/NumPy 会用到）
-sudo apt -y install python3-opencv       # 安装 OpenCV（系统版）
-sudo apt -y install python3-picamera2    # 安装 Picamera2（摄像头接口）
+2. `sudo apt –y install vim virtualenv`   安装 vim 编辑器和 virtualenv 虚拟环境工具
+3. 创建项目文件夹
+4. `svirtualenv cv`   在当前目录下创建名为 cv 的虚拟环境
+5. `source cv/bin/activate`   激活虚拟环境
+6. `pip install mediapipe python3-opencv python3-picamera2`   安装 MediaPipe（手部追踪算法库）、 OpenCV、 Picamera2（摄像头接口）
+
+基于[树莓派文档](https://pidoc.cn/docs/computers/camera-software)的提示
+> Raspberry Pi OS Bookworm 将摄像头捕捉应用程序从 libcamera-\* 更名为 rpicam-*。符号链接允许用户暂时使用旧名称。尽快采用新的应用程序名称。 Bookworm之前的 Raspberry Pi OS 版本仍使用 libcamera-* 名称。
+
+## 功能测试
+`rpicam-hello`  
